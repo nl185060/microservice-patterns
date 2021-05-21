@@ -1,0 +1,6 @@
+package com.ncr.sridhar.taxservice.controller;
+
+@RestController
+public class TaxController {
+
+}

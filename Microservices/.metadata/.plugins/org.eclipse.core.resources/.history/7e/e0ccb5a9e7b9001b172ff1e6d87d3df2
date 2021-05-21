@@ -1,0 +1,5 @@
+package com.ncr.sridhar.taxservice.model;
+
+public class Tax {
+
+}

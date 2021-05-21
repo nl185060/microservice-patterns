@@ -1,0 +1,16 @@
+package com.ncr.sridhar.Hystrix.Controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SellController {
+
+	@Autowired
+    TaxServiceDelegate taxServiceDelegate;
+
+    @RequestMapping(value = "/getTaxDetails/{retailername}", method = RequestMethod.GET)
+    public String getStudents(@PathVariable String retailername) {
+       System.out.println("Going to call tax service to get data!");
+       return taxServiceDelegate.callTaxServiceAndGetData(retailername);
+   }
+}

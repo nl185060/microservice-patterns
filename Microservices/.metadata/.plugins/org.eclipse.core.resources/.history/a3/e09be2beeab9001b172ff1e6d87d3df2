@@ -1,0 +1,8 @@
+package com.ncr.sridhar.Hystrix.Delegate;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TaxServiceDelegate {
+
+}

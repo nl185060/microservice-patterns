@@ -1,0 +1,12 @@
+package com.ncr.sridhar.Hystrix;
+
+import org.springframework.boot.SpringApplication;
+
+@SpringBootApplication
+public class HystrixDemo {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HystrixDemo.class, args);
+	}
+
+}

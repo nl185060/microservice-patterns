@@ -1,0 +1,5 @@
+package com.ncr.sridhar.Hystrix.Controller;
+
+public class SellController {
+
+}

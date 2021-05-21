@@ -1,0 +1,19 @@
+package com.ncr.sridhar.taxservice.model;
+
+public class Tax {
+	
+	private String taxName;
+	public String getTaxName() {
+		return taxName;
+	}
+	public void setTaxName(String taxName) {
+		this.taxName = taxName;
+	}
+	public String getTaxPercent() {
+		return taxPercent;
+	}
+	public void setTaxPercent(String taxPercent) {
+		this.taxPercent = taxPercent;
+	}
+	private String taxPercent;
+}

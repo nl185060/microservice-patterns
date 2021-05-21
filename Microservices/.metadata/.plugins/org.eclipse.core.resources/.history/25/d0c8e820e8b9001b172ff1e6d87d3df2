@@ -1,0 +1,33 @@
+package com.ncr.sridhar.taxservice.controller;
+
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TaxController {
+	
+	private static Map<String, List<Tax>> taxDB = new HashMap<String, List<Tax>>();
+	 
+    static {
+        taxDB = new HashMap<String, List<Tax>>();
+ 
+        List<Tax> lst = new ArrayList<Tax>();
+        Tax tax = new Tax("GST", "2");
+        lst.add(tax);
+        tax = new Tax("HST", "3");
+        lst.add(tax);
+ 
+        taxDB.put("Coles", lst);
+ 
+        lst = new ArrayList<Tax>();
+        tax = new Tax("GST", "4");
+        lst.add(tax);
+        tax = new Tax("HST", "5");
+        lst.add(tax);
+ 
+        taxDB.put("STLUS", lst);
+ 
+    }
+
+}

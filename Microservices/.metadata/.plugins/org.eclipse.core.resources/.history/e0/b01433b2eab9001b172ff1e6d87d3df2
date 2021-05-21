@@ -1,0 +1,6 @@
+package com.ncr.sridhar.Hystrix.Delegate;
+
+@Service
+public class TaxServiceDelegate {
+
+}
